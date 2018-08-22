@@ -1,0 +1,212 @@
+html {
+	height: 100%;
+}
+
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	background-color: #264059;
+	font-size:11pt;
+	margin:0px;
+}
+
+header {
+	margin-top:-20px;
+	background-color: #5c6670;
+	font-size:10pt;
+}
+
+section {
+	clear:both;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+	background-color:#000;
+	padding: 20px;
+	box-shadow: 0px 500px 0px 500px #000; /*extend footer to bottom of window*/
+}
+
+/* Links **********************************************************/
+
+a {
+	color: #07F;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #3CF;
+}
+
+/* Content **********************************************************/
+
+h1 {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 200%;
+}
+
+h2 {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-align: center;
+}
+
+h3 {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-align: center;
+}
+
+h4 {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+p {
+	color:#222;
+	font-size: 10.5pt;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+section ul {
+	color:#222;
+	font-size: 10.5pt;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+footer p {
+	color: #D9D9D9;
+}
+
+
+/* Specific IDs **********************************************************/
+
+#saturn {
+	position:absolute;
+	margin-left: 20px;
+	margin-top: 40px;
+}
+
+#navlist {
+	width:100%;
+	background-color: #000;
+}
+
+#home {
+	width:25%;
+	float:left;
+	text-align:left;
+	text-indent: 30px;
+	background-color: #6699ff;
+	padding-bottom:20px;
+}
+
+#navlist ul {
+	padding:30px 15px;
+	list-style: none;
+	margin-bottom:-20px;
+}
+
+#navlist ul li {
+	display:inline-block;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+#rightside {
+	width:75%;
+	float:right;
+	text-align:right;
+	background-color: inherit;
+	padding-bottom:20px;
+}
+
+#main {
+	background-color: #D9D9D9;
+	font-size: 11pt;
+	color: #000;
+	width:75%;
+	margin:0px auto;
+	overflow: auto;
+    z-index: -1;
+}
+
+#teaser {
+	position:absolute;
+	margin-left: 50px;
+	margin-top: 75px;
+	float:left;
+	background: rgb(34, 34, 34);
+    background: rgba(34, 34, 34, .80);
+    color:#D9D9D9;
+    padding: 30px;
+    z-index: 0;
+}
+
+#frontimg {
+	width:100%;
+	display: block;
+}
+
+#front-credit {
+    background-color: #000;
+    text-align: right;
+    width:75%;
+    margin: 0px auto;
+    color:#6699ff;
+    font-size: 8pt;
+}
+
+#maintext {
+	padding:10px 20px;
+}
+
+
+/* Classes **********************************************************/
+
+.TextLeft {
+	float:left;
+	margin:15px;
+}
+
+.TextRight {
+	float:right;
+	margin:15px;
+}
+
+img.logoimage {
+	padding: 20px;
+}
+
+.active-link {
+	color: #0CF;
+}
+
+.helper {
+	display: list-item;
+	list-style-type:none;
+    height: 100%;
+    vertical-align: text-bottom;
+}
+
+
+@media screen and (max-width: 1300px) {
+/* applies only if the screen is narrower than 500px */
+	header {
+    	font-size:20px;
+  	}
+
+	#rightside {
+		width:85%;
+		float:right;
+		text-align:right;
+		background-color: inherit;
+		padding-bottom:20px;
+	}
+
+	#home {
+		width:15%;
+		float:left;
+		text-align:left;
+		text-indent: 30px;
+		background-color: inherit;
+		padding-bottom:20px;
+	}
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta charset="UTF-8" name=viewport content='width=1280'/>
+	<title>NU REU 2018 Haight</title>
+
+	
+</head>
+
+<body>
+
+<header>
+	<div id="navlist">
+		<div id="saturn">
+			<span class="helper"></span><img id="homeicon" src="./NSF.jpg" height=25px>
+		</div>
+		<div id="home">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+			</ul>
+		</div>
+		<div id="rightside">
+			<ul>
+				<li><a href="intro.html">Introduction &amp; Science Goals</a></li>
+				<li><a href="background.html">Background</a></li>
+				<li><a class="active-link" href="methodology.html">Methodology</a></li>
+				<li><a href="references.html">References</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</header>			
+
+<section>
+	<div id="main">
+		<article id="maintext">
+			<h2><i>MESA Modules: Modeling Stellar Evolution</i>-</h2>
+
+			<hr width=75% />
+
+			<p>To evolve the HMXB system Cygnus X-1 we use Modules for Experiments in Stellar Astrophysics (MESA). MESA is a one-dimensional hydrodynamic module which evolves a zero age main sequence star (ZAMS) in a binary system.</p> 
+
+			<p> Below are MESA plots of the evolutionary tracks of Cygnus X-1 on the HR diagram. The plot to the left shows varied mass ratios (q) which are given as the mass of the black hole over the mass of the donor star. The plot to the right shows varied metallicities (Z). Note solar metallicity is Z=0.2.<p>
+
+			<img class="TextLeft" src="./HR_qwebsite.png" height=200px /><img class="TextLeft" src="./HR_metwebsite.png" height=200px />
+
+			<p>We adjust initial metallicities and then mass ratios for a range of evolutions and MESA outputs final masses and orbital separation for each evolution.With this information, we aim to determine a merger rate for HMXB systems post supernova.<p>
+
+			<img class="TextRight" src="./SN.png" height=300px />
+
+			<h2><i>Supernova Kick Monte Carlo Simulation</i>-</h2>
+
+			<p> We use a Monte Carlo simulation to model a supernova kick, sampling kick velocity magnitudes from a Maxwellian distribution. Theta, the angle between the orbital velocity relative to the black hole (i.e. the positive y axis) and the kick velocity, is drawn from a sin distribution. While, we draw phi, the angle between Z axis and the kick on the X-Z plane, from a flat distribution. <p>
+
+			<p>We input these random draws along with the outputted masses and orbital separations from MESA into equations in Kalogera 1996. We use equation 5.14 derived in Peters 1964 to find resulting inspiral time distributions and to identify systems that merge post supernova. From this we obtain the distributions for the final orbital separation and eccentricities of these systems. <p>
+
+
+
+
+			
+			
+</section>
+
+
+
+<footer>
+<p>Project undertaken as part of the <a href="http://ciera.northwestern.edu/Education/REU/">Northwestern University REU</a>, summer 2018.</p> <br />
+
+<a href="http://ciera.northwestern.edu/"><img class="logoimage" src="./CIERAlogo.png" height=80px /></a>
+<a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=5517&from=fund"><img class="logoimage" src="./NSFlogo.png" height=80px /></a>
+<a href="http://northwestern.edu"><img class="logoimage" src="./NUlogo.png" height=80px /></a>
+
+</footer>
+
+</body>
+
+</html
